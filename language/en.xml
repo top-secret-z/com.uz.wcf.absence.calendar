@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="en">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.absence.calendar"><![CDATA[Calendar]]></item>
+		<item name="wcf.acp.option.absence_calendar_category"><![CDATA[Category]]></item>
+		<item name="wcf.acp.option.absence_calendar_category.description"><![CDATA[You may only choose one category.]]></item>
+		<item name="wcf.acp.option.absence_calendar_choose"><![CDATA[Event chooseable]]></item>
+		<item name="wcf.acp.option.absence_calendar_choose.description"><![CDATA[Members may choose whether or not an event is entered.]]></item>
+		<item name="wcf.acp.option.absence_calendar_force"><![CDATA[Force Event]]></item>
+		<item name="wcf.acp.option.absence_calendar_force.description"><![CDATA[An event is created even without the user having the required user group permission.]]></item>
+		<item name="wcf.acp.option.absence_calendar_hideAuto"><![CDATA[Hide automatic Absences]]></item>
+		<item name="wcf.acp.option.absence_calendar_hideAuto.description"><![CDATA[Members automatically set to absent will not be displayed in the calendar.]]></item>
+	</category>
+	
+	<category name="wcf.user.absence">
+		<item name="wcf.user.absence.calendar.absence"><![CDATA[Absence]]></item>
+		<item name="wcf.user.absence.setting.calendar"><![CDATA[Calendar]]></item>
+		<item name="wcf.user.absence.setting.calendar.create"><![CDATA[Create Event]]></item>
+		<item name="wcf.user.absence.setting.calendar.create.description"><![CDATA[Absences are automatically inserted into the calendar as event.]]></item>
+		<item name="wcf.user.absence.calendar.subject"><![CDATA[{$username} absent]]></item>
+		<item name="wcf.user.absence.calendar.text"><![CDATA[Reason: {if !$reason}none{else}{$reason}{/if}.{if $absentRep}<br>Representation: {@$absentRep}.{/if}]]></item>
+	</category>
+</language>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
+	<import>
+		<eventlistener name="AbsenceSettingsFormCalendar">
+			<eventclassname>wcf\form\AbsenceSettingsForm</eventclassname>
+			<eventname>assignVariables,readFormParameters,readParameters,save</eventname>
+			<environment>user</environment>
+			<inherit>1</inherit>
+			<listenerclassname>calendar\system\event\listener\AbsenceSettingsFormCalendarListener</listenerclassname>
+		</eventlistener>
+		
+		<eventlistener name="AbsenceCalendarUserAction">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>user</environment>
+			<listenerclassname>calendar\system\event\listener\AbsenceCalendarUserActionListener</listenerclassname>
+		</eventlistener>
+		<eventlistener name="AbsenceCalendarUserActionAdmin">
+			<eventclassname>wcf\data\user\UserAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<environment>admin</environment>
+			<listenerclassname>calendar\system\event\listener\AbsenceCalendarUserActionListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

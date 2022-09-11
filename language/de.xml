@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.absence.calendar"><![CDATA[Kalender]]></item>
+		<item name="wcf.acp.option.absence_calendar_category"><![CDATA[Kategorie]]></item>
+		<item name="wcf.acp.option.absence_calendar_category.description"><![CDATA[Es darf nur eine Kategorie ausgewählt werden.]]></item>
+		<item name="wcf.acp.option.absence_calendar_choose"><![CDATA[Termin wählbar]]></item>
+		<item name="wcf.acp.option.absence_calendar_choose.description"><![CDATA[Benutzer dürfen wählen, ob ein Termin eingetragen wird oder nicht.]]></item>
+		<item name="wcf.acp.option.absence_calendar_force"><![CDATA[Termin erzwingen]]></item>
+		<item name="wcf.acp.option.absence_calendar_force.description"><![CDATA[Ein Termin wird auch dann eingetragen, wenn der Benutzer nicht über das erforderliche Benutzergruppenrecht verfügt.]]></item>
+		<item name="wcf.acp.option.absence_calendar_hideAuto"><![CDATA[Automatische Abwesenheiten verstecken]]></item>
+		<item name="wcf.acp.option.absence_calendar_hideAuto.description"><![CDATA[Automatisch abwesende Benutzer werden nicht im Kalender angezeigt.]]></item>
+	</category>
+	
+	<category name="wcf.user.absence">
+		<item name="wcf.user.absence.calendar.absence"><![CDATA[Abwesenheit]]></item>
+		<item name="wcf.user.absence.setting.calendar"><![CDATA[Kalender]]></item>
+		<item name="wcf.user.absence.setting.calendar.create"><![CDATA[Termin erstellen]]></item>
+		<item name="wcf.user.absence.setting.calendar.create.description"><![CDATA[Abwesenheiten werden automatisch als Termin im Kalender eingetragen.]]></item>
+		<item name="wcf.user.absence.calendar.subject"><![CDATA[{$username} abwesend]]></item>
+		<item name="wcf.user.absence.calendar.text"><![CDATA[Grund: {if !$reason}ohne{else}{$reason}{/if}.{if $absentRep}<br>Vertretung: {@$absentRep}.{/if}]]></item>
+	</category>
+</language>
